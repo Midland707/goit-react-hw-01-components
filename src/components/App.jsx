@@ -1,4 +1,5 @@
-import { test } from 'components/Profile/Profile';
+import { profile } from 'components/Profile/Profile';
+import { statistics } from 'components/Statistics/Statistics';
 
 export const App = () => {
   return (
@@ -12,17 +13,8 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      {test}
+      {profile}
+      {statistics}
     </div>
   );
 };
-
-// const elem1 = <span>Hello</span>;
-// const elem2 = <span>World</span>;
-
-// const jsxElement = (
-//   <div>
-//     {elem1}
-//     {elem2}
-//   </div>
-// );

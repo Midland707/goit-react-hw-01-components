@@ -31,7 +31,7 @@ const Profile = ({ avatar, username, tag, location, stats }) => (
   </div>
 );
 
-export const test = (
+export const profile = (
   <Profile
     username={user.username}
     tag={user.tag}
