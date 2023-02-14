@@ -1,5 +1,6 @@
 import { profile } from 'components/Profile/Profile';
 import { statistics } from 'components/Statistics/Statistics';
+import { friendList } from 'components/FriendList/FriendList';
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
     >
       {profile}
       {statistics}
+      {friendList}
     </div>
   );
 };
