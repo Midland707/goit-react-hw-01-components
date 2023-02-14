@@ -6,7 +6,6 @@ import friends from 'components/FriendList/friends.json';
 
 const FriendList = ({ friends }) => (
   <section class="statistics">
-    <h2 class="title">Upload stats</h2>
     <ul class="stat-list">
       {friends.map(friends => (
         <li class="item">
