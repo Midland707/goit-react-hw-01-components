@@ -1,6 +1,6 @@
-import { profile } from 'components/profile/profile';
-import { statistics } from 'components/statistics/statistics';
-import { friendList } from 'components/friendList/friendList';
+import { profile } from './profile/profile';
+import { statistics } from './statistics/statistics';
+import { friendList } from './friendList/friendList';
 import { transactionHistory } from 'components/transactionHistory/transactionHistory';
 
 export const App = () => {
