@@ -1,6 +1,49 @@
-.statistics {}
-.title {}
-.stat-list {}
-.item {}
-.label {}
-.percentage {}
+/* ul {
+
+} */
+
+.statistics {
+  background-color: white;
+  width: 600px;
+  margin-bottom: 30px;
+}
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+}
+.stat-list {
+  display: flex;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: calc((100% - 30px) / 2);
+  height: 100px;
+}
+
+.item:first-child {
+  background-color: cyan;
+}
+.item:nth-child(2) {
+  background-color: violet;
+}
+.item:nth-child(3) {
+  background-color: crimson;
+}
+.item:nth-child(4) {
+  background-color: green;
+}
+.item:last-child {
+  background-color: darkcyan;
+}
+.label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.percentage {
+  font-size: 35px;
+}

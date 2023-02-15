@@ -1,24 +1,26 @@
-import { profile } from 'components/Profile/Profile';
-import { statistics } from 'components/Statistics/Statistics';
-import { friendList } from 'components/FriendList/FriendList';
-import { transactionHistory } from 'components/TransactionHistory/TransactionHistory';
+import { profile } from 'components/profile/profile';
+import { statistics } from 'components/statistics/statistics';
+import { friendList } from 'components/friendList/friendList';
+import { transactionHistory } from 'components/transactionHistory/transactionHistory';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        // height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        flexDirection: 'column',
         fontSize: 40,
-        color: '#010101',
+        color: 'rgb(180, 180, 180)',
+        backgroundColor: 'rgba(197, 193, 193, 0.863)',
       }}
     >
       {profile}
       {statistics}
       {friendList}
-      {transactionHistory}
+      {/* {transactionHistory} */}
     </div>
   );
 };

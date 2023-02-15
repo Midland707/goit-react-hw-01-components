@@ -3,7 +3,8 @@
 // Дані про користувача лежать у файлі user.json.
 
 // import PropTypes from 'prop-types'; // ES6 перевіряє відповідність типів даних
-import user from 'components/Profile/user.json';
+import user from 'components/profile/user.json';
+import './profile.css';
 
 const Profile = ({ avatar, username, tag, location, stats }) => (
   <div class="profile">
@@ -15,15 +16,15 @@ const Profile = ({ avatar, username, tag, location, stats }) => (
     </div>
 
     <ul class="stats">
-      <li>
+      <li class="stats-item">
         <span class="label">Followers</span>
         <span class="quantity">{stats.followers}</span>
       </li>
-      <li>
+      <li class="stats-item">
         <span class="label">Views</span>
         <span class="quantity">{stats.views}</span>
       </li>
-      <li>
+      <li class="stats-item">
         <span class="label">Likes</span>
         <span class="quantity">{stats.likes}</span>
       </li>
