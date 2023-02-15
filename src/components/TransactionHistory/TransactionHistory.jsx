@@ -3,7 +3,7 @@
 // Дані для списку доступні у форматі JSON у файлі transactions.json.
 
 import transactions from './transactions.json';
-import './transactionHistory.css';
+import './TransactionHistory.css';
 
 const TransactionHistory = ({ items }) => (
   <table class="transaction-history">

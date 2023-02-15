@@ -4,7 +4,7 @@
 
 // import PropTypes from 'prop-types'; // ES6 перевіряє відповідність типів даних
 import user from './user.json';
-import './profile.css';
+import './Profile.css';
 
 const Profile = ({ avatar, username, tag, location, stats }) => (
   <div class="profile">

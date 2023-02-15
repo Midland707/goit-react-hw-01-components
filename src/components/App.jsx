@@ -1,7 +1,7 @@
-import { profile } from './Profile/profile';
-import { statistics } from './Statistics/statistics';
-import { friendList } from './FriendList/friendList';
-import { transactionHistory } from './TransactionHistory/transactionHistory';
+import { profile } from './Profile/Profile';
+import { statistics } from './Statistics/Statistics';
+import { friendList } from './FriendList/FriendList';
+import { transactionHistory } from './TransactionHistory/TransactionHistory';
 
 export const App = () => {
   return (

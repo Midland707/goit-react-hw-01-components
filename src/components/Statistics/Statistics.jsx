@@ -3,7 +3,7 @@
 // відвідування веб-сторінки користувачами різних країн, фінансові витрати тощо. Дані про статистику лежать у файлі data.json.
 
 import data from './data.json';
-import './statistics.css';
+import './Statistics.css';
 
 const Statistics = ({ stats }) => (
   <section class="statistics">

@@ -3,7 +3,7 @@
 // Інформація про друзів зберігається у файлі friends.json.
 
 import friends from './friends.json';
-import './friendList.css';
+import './FriendList.css';
 
 const FriendList = ({ friends }) => (
   <section class="friends">
