@@ -9,7 +9,7 @@ import './Profile.css';
 const Profile = ({ avatar, username, tag, location, stats }) => (
   <div class="profile">
     <div class="description">
-      <img src={avatar} alt="User avatar" class="avatar" />
+      <img class="profile-avatar" src={avatar} alt="User avatar" />
       <p class="name">{username}</p>
       <p class="tag">@{tag}</p>
       <p class="location">{location}</p>

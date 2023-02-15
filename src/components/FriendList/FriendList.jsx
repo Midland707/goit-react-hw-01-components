@@ -10,7 +10,7 @@ const FriendList = ({ friends }) => (
     <h2 class="friend-title">Friends</h2>
     <ul class="friend-list">
       {friends.map(friends => (
-        <li class="friend-item">
+        <li key={friends.id} class="friend-item">
           {friends.isOnline === true ? (
             <span class="status status-green"></span>
           ) : (

@@ -1,1 +1,22 @@
-.transaction-history {}
+.transaction-history {
+  width: 1200px;
+  background-color: white;
+  margin-bottom: 40px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #04aa6d;
+  color: white;
+  text-transform: uppercase;
+}
+td {
+  text-align: center;
+  text-transform: capitalize;
+}

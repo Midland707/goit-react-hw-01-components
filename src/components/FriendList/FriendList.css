@@ -2,6 +2,7 @@
   width: 600px;
   border: 1px solid;
   border-radius: 20px;
+  margin-bottom: 30px;
 }
 
 .friend-title {
@@ -16,6 +17,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .friend-item {
