@@ -1,7 +1,7 @@
-import { profile } from 'components/profile/profile';
-import { statistics } from 'components/statistics/statistics';
-import { friendList } from 'components/friendList/friendList';
-import { transactionHistory } from 'components/transactionHistory/transactionHistory';
+import { profile } from './Profile/profile';
+import { statistics } from './Statistics/statistics';
+import { friendList } from './FriendList/friendList';
+import { transactionHistory } from './TransactionHistory/transactionHistory';
 
 export const App = () => {
   return (
