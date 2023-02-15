@@ -6,13 +6,13 @@ import data from './data.json';
 import './Statistics.css';
 
 const Statistics = ({ stats }) => (
-  <section class="statistics">
-    <h2 class="title">Upload stats</h2>
-    <ul class="stat-list">
+  <section className="statistics">
+    <h2 className="title">Upload stats</h2>
+    <ul className="stat-list">
       {stats.map(stats => (
-        <li key={stats.id} class="item">
-          <span class="label">{stats.label}</span>
-          <span class="percentage">{stats.percentage}%</span>
+        <li key={stats.id} className="item">
+          <span className="label">{stats.label}</span>
+          <span className="percentage">{stats.percentage}%</span>
         </li>
       ))}
     </ul>

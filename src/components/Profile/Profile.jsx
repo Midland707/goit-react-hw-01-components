@@ -7,26 +7,26 @@ import user from './user.json';
 import './Profile.css';
 
 const Profile = ({ avatar, username, tag, location, stats }) => (
-  <div class="profile">
-    <div class="description">
-      <img class="profile-avatar" src={avatar} alt="User avatar" />
-      <p class="name">{username}</p>
-      <p class="tag">@{tag}</p>
-      <p class="location">{location}</p>
+  <div className="profile">
+    <div className="description">
+      <img className="profile-avatar" src={avatar} alt="User avatar" />
+      <p className="name">{username}</p>
+      <p className="tag">@{tag}</p>
+      <p className="location">{location}</p>
     </div>
 
-    <ul class="stats">
-      <li class="stats-item">
-        <span class="label">Followers</span>
-        <span class="quantity">{stats.followers}</span>
+    <ul className="stats">
+      <li className="stats-item">
+        <span className="label">Followers</span>
+        <span className="quantity">{stats.followers}</span>
       </li>
-      <li class="stats-item">
-        <span class="label">Views</span>
-        <span class="quantity">{stats.views}</span>
+      <li className="stats-item">
+        <span className="label">Views</span>
+        <span className="quantity">{stats.views}</span>
       </li>
-      <li class="stats-item">
-        <span class="label">Likes</span>
-        <span class="quantity">{stats.likes}</span>
+      <li className="stats-item">
+        <span className="label">Likes</span>
+        <span className="quantity">{stats.likes}</span>
       </li>
     </ul>
   </div>

@@ -6,23 +6,23 @@ import friends from './friends.json';
 import './FriendList.css';
 
 const FriendList = ({ friends }) => (
-  <section class="friends">
-    <h2 class="friend-title">Friends</h2>
-    <ul class="friend-list">
+  <section className="friends">
+    <h2 className="friend-title">Friends</h2>
+    <ul className="friend-list">
       {friends.map(friends => (
-        <li key={friends.id} class="friend-item">
+        <li key={friends.id} className="friend-item">
           {friends.isOnline === true ? (
-            <span class="status status-green"></span>
+            <span className="status status-green"></span>
           ) : (
-            <span class="status status-red"></span>
+            <span className="status status-red"></span>
           )}
           <img
-            class="friend-avatar"
+            className="friend-avatar"
             src={friends.avatar}
             alt="User avatar"
             width="48"
           />
-          <p class="friend-name">{friends.name} </p>
+          <p className="friend-name">{friends.name} </p>
         </li>
       ))}
     </ul>
