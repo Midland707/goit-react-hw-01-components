@@ -2,7 +2,7 @@
 // Необхідно створити компонент історії транзакцій в особистому кабінеті інтернет-банку.
 // Дані для списку доступні у форматі JSON у файлі transactions.json.
 
-import transactions from 'components/transactionHistory/transactions.json';
+import transactions from './transactions.json';
 import './transactionHistory.css';
 
 const TransactionHistory = ({ items }) => (

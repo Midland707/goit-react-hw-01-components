@@ -3,7 +3,7 @@
 // Дані про користувача лежать у файлі user.json.
 
 // import PropTypes from 'prop-types'; // ES6 перевіряє відповідність типів даних
-import user from 'components/profile/user.json';
+import user from './user.json';
 import './profile.css';
 
 const Profile = ({ avatar, username, tag, location, stats }) => (
