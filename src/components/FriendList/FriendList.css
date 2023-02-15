@@ -35,6 +35,14 @@
   border-radius: 20px;
 }
 
+.status-green {
+  background-color: green;
+}
+
+.status-red {
+  background-color: red;
+}
+
 .friend-avatar {
   width: 80px;
   height: 80px;

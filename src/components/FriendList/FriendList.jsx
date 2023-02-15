@@ -11,7 +11,11 @@ const FriendList = ({ friends }) => (
     <ul class="friend-list">
       {friends.map(friends => (
         <li class="friend-item">
-          <span class="status">{friends.isOnline}</span>
+          {friends.isOnline === true ? (
+            <span class="status status-green"></span>
+          ) : (
+            <span class="status status-red"></span>
+          )}
           <img
             class="friend-avatar"
             src={friends.avatar}
