@@ -37,6 +37,8 @@ FriendList.propTypes = {
     id: PropTypes.number.isRequired,
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
+    // isOnline: PropTypes.bool.isRequired,
+    isOnline: PropTypes.oneOf([true, false]).isRequired,
+    
   })).isRequired,
 };
