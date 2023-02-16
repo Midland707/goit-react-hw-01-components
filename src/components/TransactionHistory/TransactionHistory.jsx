@@ -29,7 +29,7 @@ const TransactionHistory = ({ items }) => (
 
 export const transactionHistory = <TransactionHistory items={transactions} />;
 
-Statistics.propTypes = {
+TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(PropTypes.shape( {
     id: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,

@@ -32,7 +32,7 @@ const FriendList = ({ friends }) => (
 
 export const friendList = <FriendList friends={friends} />;
 
-Statistics.propTypes = {
+FriendList.propTypes = {
   friends: PropTypes.arrayOf(PropTypes.shape( {
     id: PropTypes.number.isRequired,
     avatar: PropTypes.string.isRequired,
