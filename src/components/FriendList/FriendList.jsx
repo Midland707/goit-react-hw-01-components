@@ -2,6 +2,7 @@
 // Необхідно створити компонент <FriendList>, за допомогою якого ми могли б відображати інформацію про друзів користувача.
 // Інформація про друзів зберігається у файлі friends.json.
 
+import PropTypes from 'prop-types';
 import friends from './friends.json';
 import './FriendList.css';
 
@@ -30,3 +31,12 @@ const FriendList = ({ friends }) => (
 );
 
 export const friendList = <FriendList friends={friends} />;
+
+Statistics.propTypes = {
+  friends: PropTypes.arrayOf(PropTypes.shape( {
+    id: PropTypes.number.isRequired,
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+  })).isRequired,
+};
