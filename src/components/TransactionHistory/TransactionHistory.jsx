@@ -7,7 +7,7 @@ import transactions from './transactions.json';
 import css from'./TransactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => (
-  <table className="transaction-history">
+  <table className={css.transaction_history}>
     <thead>
       <tr>
         <th>Type</th>
