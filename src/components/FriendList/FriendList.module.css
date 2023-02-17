@@ -5,13 +5,13 @@
   margin-bottom: 30px;
 }
 
-.friend-title {
+.friend_title {
   color: black;
   text-align: center;
   margin: 20px;
 }
 
-.friend-list {
+.friend_list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
   margin-bottom: 20px;
 }
 
-.friend-item {
+.friend_item {
   background-color: white;
   width: 400px;
   height: 100px;
@@ -37,20 +37,20 @@
   border-radius: 20px;
 }
 
-.status-green {
+.status_green {
   background-color: green;
 }
 
-.status-red {
+.status_red {
   background-color: red;
 }
 
-.friend-avatar {
+.friend_avatar {
   width: 80px;
   height: 80px;
 }
 
-.friend-name {
+.friend_name {
   font-size: 30px;
   color: black;
 }

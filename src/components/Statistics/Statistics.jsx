@@ -4,23 +4,23 @@
 
 import PropTypes from 'prop-types';
 import data from './data.json';
-import './Statistics.css';
+import css from'./Statistics.module.css';
 
 const Statistics = ({ stats }) => (
-  <section className="statistics">
-    <h2 className="title">Upload stats</h2>
-    <ul className="stat-list">
+  <section className={css.statistics}>
+    <h2 className={css.title}>Upload stats</h2>
+    <ul className={css.stat_list}>
       {stats.map(stats => (
-        <li key={stats.id} className="item">
-          <span className="label">{stats.label}</span>
-          <span className="percentage">{stats.percentage}%</span>
+      <li key={stats.id} className={css.item}>
+          <span className={css.label}>{stats.label}</span>
+          <span className={css.percentage}>{stats.percentage}%</span>
         </li>
       ))}
     </ul>
   </section>
 );
 
-export const statistics = <Statistics title="Upload stats" stats={data} />;
+export const statistics = <Statistics stats={data} />;
 
 Statistics.propTypes = {
   stats: PropTypes.arrayOf(PropTypes.shape( {

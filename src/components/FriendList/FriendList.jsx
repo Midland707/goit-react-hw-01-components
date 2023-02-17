@@ -4,26 +4,26 @@
 
 import PropTypes from 'prop-types';
 import friends from './friends.json';
-import './FriendList.css';
+import css from './FriendList.module.css';
 
 const FriendList = ({ friends }) => (
   <section className="friends">
-    <h2 className="friend-title">Friends</h2>
-    <ul className="friend-list">
+    <h2 className={css.friend_title}>Friends</h2>
+    <ul className="friend_list">
       {friends.map(friends => (
-        <li key={friends.id} className="friend-item">
+        <li key={friends.id} className="friend_item">
           {friends.isOnline === true ? (
-            <span className="status status-green"></span>
+            <span className="status status_green"></span>
           ) : (
-            <span className="status status-red"></span>
+            <span className="status status_red"></span>
           )}
           <img
-            className="friend-avatar"
+            className="friend_avatar"
             src={friends.avatar}
             alt="User avatar"
             width="48"
           />
-          <p className="friend-name">{friends.name} </p>
+          <p className="friend_name">{friends.name} </p>
         </li>
       ))}
     </ul>
