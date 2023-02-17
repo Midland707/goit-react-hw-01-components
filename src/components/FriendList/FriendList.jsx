@@ -9,21 +9,21 @@ import css from './FriendList.module.css';
 const FriendList = ({ friends }) => (
   <section className="friends">
     <h2 className={css.friend_title}>Friends</h2>
-    <ul className="friend_list">
+    <ul className={css.friend_list}>
       {friends.map(friends => (
-        <li key={friends.id} className="friend_item">
+        <li key={friends.id} className={css.friend_item}>
           {friends.isOnline === true ? (
-            <span className="status status_green"></span>
+            <span className={`${css.status} ${css.status_green}`}></span>
           ) : (
-            <span className="status status_red"></span>
+            <span className={`${css.status} ${css.status_red}`}></span>
           )}
           <img
-            className="friend_avatar"
+            className={css.friend_avatar}
             src={friends.avatar}
             alt="User avatar"
             width="48"
           />
-          <p className="friend_name">{friends.name} </p>
+          <p className={css.friend_name}>{friends.name} </p>
         </li>
       ))}
     </ul>
