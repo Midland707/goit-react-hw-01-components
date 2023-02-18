@@ -3,10 +3,9 @@
 // Інформація про друзів зберігається у файлі friends.json.
 
 import PropTypes from 'prop-types';
-import friends from './friends.json';
 import css from './FriendList.module.css';
 
-const FriendList = ({ friends }) => (
+export const FriendList = ({ friends }) => (
   <section className="friends">
     <h2 className={css.friend_title}>Friends</h2>
     <ul className={css.friend_list}>
@@ -29,8 +28,6 @@ const FriendList = ({ friends }) => (
     </ul>
   </section>
 );
-
-export const friendList = <FriendList friends={friends} />;
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(PropTypes.shape( {

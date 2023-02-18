@@ -3,10 +3,9 @@
 // Дані про користувача лежать у файлі user.json.
 
 import PropTypes from 'prop-types';
-import user from './user.json';
 import css from './Profile.module.css';
 
-const Profile = ({ username, tag, location, avatar, stats }) => (
+export const Profile = ({ username, tag, location, avatar, stats }) => (
   <div className={css.profile}>
     <div className={css.description}>
       <img className={css.profile_avatar} src={avatar} alt="User avatar" />
@@ -30,16 +29,6 @@ const Profile = ({ username, tag, location, avatar, stats }) => (
       </li>
     </ul>
   </div>
-);
-
-export const profile = (
-  <Profile
-    username={user.username}
-    tag={user.tag}
-    location={user.location}
-    avatar={user.avatar}
-    stats={user.stats}
-  />
 );
 
 Profile.propTypes = {

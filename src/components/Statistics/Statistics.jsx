@@ -3,10 +3,9 @@
 // відвідування веб-сторінки користувачами різних країн, фінансові витрати тощо. Дані про статистику лежать у файлі data.json.
 
 import PropTypes from 'prop-types';
-import data from './data.json';
 import css from'./Statistics.module.css';
 
-const Statistics = ({ stats }) => (
+export const Statistics = ({ stats }) => (
   <section className={css.statistics}>
     <h2 className={css.title}>Upload stats</h2>
     <ul className={css.stat_list}>
@@ -19,8 +18,6 @@ const Statistics = ({ stats }) => (
     </ul>
   </section>
 );
-
-export const statistics = <Statistics stats={data} />;
 
 Statistics.propTypes = {
   stats: PropTypes.arrayOf(PropTypes.shape( {

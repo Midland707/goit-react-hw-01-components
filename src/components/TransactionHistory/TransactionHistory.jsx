@@ -3,10 +3,9 @@
 // Дані для списку доступні у форматі JSON у файлі transactions.json.
 
 import PropTypes from 'prop-types';
-import transactions from './transactions.json';
 import css from'./TransactionHistory.module.css';
 
-const TransactionHistory = ({ items }) => (
+export const TransactionHistory = ({ items }) => (
   <table className={css.transaction_history}>
     <thead>
       <tr>
@@ -26,8 +25,6 @@ const TransactionHistory = ({ items }) => (
     </tbody>
   </table>
 );
-
-export const transactionHistory = <TransactionHistory items={transactions} />;
 
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(PropTypes.shape( {
